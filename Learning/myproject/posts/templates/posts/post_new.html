@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    New Post
+{% endblock %}
+
+{% block content %}
+<div class="add-blog-container">
+    <h1 class=".add-blog-title">Post a new blog</h1>
+    <form class=".add-blog-form" action="{% url 'posts:new-post' %}" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        
+        <!-- Title Field -->
+        <div class="form-group">
+            <label for="{{ form.title.id_for_label }}">Title</label>
+            {{ form.title }}
+            <small class="form-text">{{ form.title.help_text }}</small>
+        </div>
+        
+        <!-- Body Field -->
+        <div class="form-group">
+            <label for="{{ form.body.id_for_label }}">Body</label>
+            {{ form.body }}
+            <small class="form-text">{{ form.body.help_text }}</small>
+        </div>
+        
+        <!-- Banner (Image) Field -->
+        <div class="form-group">
+            <label for="{{ form.banner.id_for_label }}">Banner Image</label>
+            {{ form.banner }}
+            <small class="form-text">{{ form.banner.help_text }}</small>
+        </div>
+        
+        <!-- Slug Field -->
+        <div class="form-group">
+            <label for="{{ form.slug.id_for_label }}">Slug</label>
+            {{ form.slug }}
+            <small class="form-text">{{ form.slug.help_text }}</small>
+        </div>
+        
+        <!-- Author (Hidden) Field -->
+        {{ form.author }}  <!-- The author field is typically hidden since it's based on the current logged-in user -->
+
+        <button type="submit" class="btn-primary">Post the Blog</button>
+    </form>
+</div>
+{% endblock %}

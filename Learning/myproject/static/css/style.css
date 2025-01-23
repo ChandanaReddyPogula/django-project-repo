@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f8c291, #fad390);
+    color: #2d3436;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #eb6440;
+    color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo span {
+    margin-left: 8px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    transition: 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f6e58d;
+}
+
+.nav-button, .nav-link {
+    background-color: #e84118;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.nav-button:hover, .nav-link:hover {
+    background-color: #c23616;
+}
+
+/* Content Styling */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Form Containers (Login, Register, Add Blog, Post) */
+.login-container, .register-container, .add-blog-container, .post-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background: #fff; /* Whiteboard background */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* Titles */
+.login-title, .register-title, .add-blog-title, .post-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+/* Form Styles */
+.login-form, .register-form, .add-blog-form, .post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+    padding-right: 30px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.form-text {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.btn-primary {
+    padding: 12px;
+    border: none;
+    background-color: #e74c3c;
+    color: #fff;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #c0392b;
+}
+
+small {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+/* Add Blog Page */
+.add-blog-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 40px;
+    background: #fff; /* Whiteboard background */
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.add-blog-form textarea {
+    min-height: 200px;
+}
+
+/* Blog List Page */
+section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    width: 80%;
+    margin: 50px auto;
+}
+
+article {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+}
+
+article:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+h2 a {
+    color: #2d3436;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+h2 a:hover {
+    color: #e74c3c;
+}
+
+p {
+    color: #777;
+}
+
+/* Dedicated Blog Page (Post Details) */
+.post-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff; /* Whiteboard background */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.post-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+p.date {
+    color: #777;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    color: #2d3436;
+    margin-top: 50px;
+}
